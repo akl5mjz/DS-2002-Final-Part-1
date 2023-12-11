@@ -3,7 +3,7 @@ DOCUMENTATION AND ANALYSIS
 In this project, I created a program that retrieves data from a remote API every minute, storing it in a
 relational Sqlite database for 60 minutes. The API provides data on "factor," "pi," and "time."  The code used can be
 found in the 'analysis.py' and 'data_ingestion.py' files which store and pull from the 'api_data.db' file.  To ensure
-proper execution every minute for 60 minutes, I reliws on Python's asyncio library.  The script initiates at 00 minutes
+proper execution every minute for 60 minutes, I relies on Python's asyncio library.  The script initiates at 00 minutes
 and continues for an hour storing data to a relational database.  For simplicity, I chose Sqlite.
 
 My analysis pointed out some key patterns:
@@ -15,7 +15,7 @@ Analyzing the relationship between pi and time shows something different however
 quickly drops to 3.14 within the first two minutes of the hour and stays stable thereafter for the remainder.
 
 Lastly a similar relationship is seen between factor and pi over the course of the hour.  Pi starts out at 4 while
-factor begins close to 1.  Then pi drops to 3.14 quickly  but factor continues to exponentionally increase over the
+factor begins close to 1.  Then pi drops to 3.14 quickly  but factor continues to exponentially increase over the
 course of the hour.
 
 In summary, a robust positive relationship exists between the time and factor variables, indicating exponential growth
